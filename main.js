@@ -32,7 +32,7 @@ btnSubmit.addEventListener('click', function() {
                 break;         
             }
         }
-
+        
         //output rules
         if (emailFound) {
             validate.innerHTML = `Esito: Accesso eseguito, l'indirizzo ${email} è presente nella lista`
@@ -53,9 +53,12 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 const btnPlay = document.querySelector('.play')
 
 btnPlay.addEventListener('click', function() {
+
+    // players
     let player = Math.floor(Math.random() * 7);
     let cpu = Math.floor(Math.random() * 7);
     
+    //refs
     const giocatore1 = document.querySelector('.player1')
     const computer = document.querySelector('.player2')
     const winner = document.querySelector('.winner')
@@ -63,6 +66,8 @@ btnPlay.addEventListener('click', function() {
     giocatore1.innerHTML = `Il tuo numero è ${player}`
     computer.innerHTML = `Il numero del computer è ${cpu}`
 
+
+    //output rules
     if (player > cpu){
         winner.innerHTML = `Hai vinto`
     }
@@ -72,7 +77,6 @@ btnPlay.addEventListener('click', function() {
     else {
         winner.innerHTML = `Pareggio, ritira i dadi`
     }
-
 })
 
 

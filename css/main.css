@@ -21,6 +21,7 @@ h1 {
 input {
     background-color: darkslategray;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .container {
