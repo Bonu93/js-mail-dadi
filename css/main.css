@@ -5,15 +5,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background-color: gold;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+}
+
+input {
+    background-color: darkslategray;
+    padding: 10px;
 }
 
 .container {
     max-width: 1170px;
     margin: 20px auto;
     padding: 20px;
-    background: #ccc;
+    background-color: dodgerblue;
     margin-bottom: 50px;
     border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px #333333;
 }
 
 h1, h2 {
@@ -22,4 +39,11 @@ h1, h2 {
 
 h3 {
     margin: 20px 0;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: goldenrod;
 }
