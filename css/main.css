@@ -6,3 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 1170px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ccc;
+}
+
+h1, h2 {
+    margin-bottom: 30px;
+}
+
+#confirm {
+    margin-top: 20px;
+}
