@@ -61,7 +61,7 @@ btnPlay.addEventListener('click', function() {
     const winner = document.querySelector('.winner')
 
     giocatore1.innerHTML = `Il tuo numero è ${player}`
-    computer.innerHTML = `Il tuo numero è ${cpu}`
+    computer.innerHTML = `Il numero del computer è ${cpu}`
 
     if (player > cpu){
         winner.innerHTML = `Hai vinto`
