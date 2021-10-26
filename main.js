@@ -8,7 +8,6 @@ Mail
 
 
 // mail list
-
 const emailList = ['luca.morucci.kb@gmail.com', 'gianlucamancini@yahoo.it', 'bonu93@hotmail.it', 'ale.d@gmail.com']
 
 //refs
@@ -32,7 +31,6 @@ btnSubmit.addEventListener('click', function() {
                 emailFound = true;   
                 break;         
             }
-
         }
 
         //output rules
@@ -43,3 +41,38 @@ btnSubmit.addEventListener('click', function() {
         }
     } 
 })
+
+
+/*
+Gioco dei dadi
+Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+Stabilire il vincitore, in base a chi fa il punteggio più alto.
+*/
+
+
+const btnPlay = document.querySelector('.play')
+
+btnPlay.addEventListener('click', function() {
+    let player = Math.floor(Math.random() * 7);
+    let cpu = Math.floor(Math.random() * 7);
+    
+    const giocatore1 = document.querySelector('.player1')
+    const computer = document.querySelector('.player2')
+    const winner = document.querySelector('.winner')
+
+    giocatore1.innerHTML = `Il tuo numero è ${player}`
+    computer.innerHTML = `Il tuo numero è ${cpu}`
+
+    if (player > cpu){
+        winner.innerHTML = `Hai vinto`
+    }
+    else if (cpu > player) {
+        winner.innerHTML = `Vince il computer`
+    }
+    else {
+        winner.innerHTML = `Pareggio, ritira i dadi`
+    }
+
+})
+
+
