@@ -55,8 +55,8 @@ const btnPlay = document.querySelector('.play')
 btnPlay.addEventListener('click', function() {
 
     // players
-    let player = Math.floor(Math.random() * 7);
-    let cpu = Math.floor(Math.random() * 7);
+    let player = Math.floor(Math.random() * 6) +1;
+    let cpu = Math.floor(Math.random() * 6) +1;
     
     //refs
     const giocatore1 = document.querySelector('.player1')
